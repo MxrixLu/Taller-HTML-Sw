@@ -3,15 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maqueta Web con Bootstrap</title>
-    <!-- Bootstrap CSS -->
+    <title>Gatos Asombrosos</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo global */
+        body {
+            font-family: 'Times new roman';
+            background-color: #f8f9fa; 
+            color: #333; 
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            background-color: #e7c6c6; 
+            padding: 20px 0; 
+            box-shadow: 0 4px 8px rgba(255, 128, 128, 0); 
+            color: #000000;
+        }
+
+        header h1 {
+            font-size: 5rem; 
+            color: #000000; /* Cambiado a negro */
+        }
+
+        .image-text-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 40px; /* Espacio inferior */
+        }
+
+        .image-text-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 20px; /* Espacio superior */
+            color: #000000; /* Color del encabezado */
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px; /* Espacio inferior en los párrafos */
+        }
+
+        a {
+            color: #000000; /* Color tomate para los enlaces */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline; 
+        }
+
+        ul {
+            list-style-type: square;
+            font-size: 1.1rem;
+            padding-left: 20px;
+        }
+
+        form {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; 
+        }
+
+        button {
+            background-color: #FF6347;
+            border: none;
+            color: white; 
+        }
+
+        button:hover {
+            background-color: #ffffff; 
+        }
+
+        @media (max-width: 768px) {
+            .image-text-section {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-primary text-white text-center py-4">
-        <h1>Gatos</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="text-center">
+        <h1>Gatos Asombrosos</h1>
+        <nav class="navbar navbar-expand-lg" style="background-color: #e7c6c6;"> <!-- Cambiado el color de fondo -->
             <div class="container">
                 <a class="navbar-brand" href="#">Los mejores gatos del mundo</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,44 +128,41 @@
     </header>
 
     <div class="container mt-5">
-        <section class="row mb-4">
-            <div class="col-md-12 text-center">
-                <img src="https://cdn.discordapp.com/attachments/754111872399048707/1297556260832673792/5f0dd722-bbdf-4dc3-a4c1-1d6ea31cb81e.png?ex=67165af0&is=67150970&hm=7a7c3da23b2d1893d66fdd70820daf397cab1217d7167ee85ee49cfc56cf7eb7&" class="img-fluid" alt="Imagen destacada">
+        <!-- Imagen y texto alineados -->
+        <section class="row image-text-section">
+            <div class="col-md-6 mb-4">
+                <img src="https://cdn.discordapp.com/attachments/754111872399048707/1297556260832673792/5f0dd722-bbdf-4dc3-a4c1-1d6ea31cb81e.png?ex=67165af0&is=67150970&hm=7a7c3da23b2d1893d66fdd70820daf397cab1217d7167ee85ee49cfc56cf7eb7&" alt="Imagen destacada de gatos">
             </div>
-        </section>
-
-        <section class="row mb-4">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <h2>Sobre mis gatos</h2>
-                <p>Mis gatos son los gatos más increibles en la galaxía. Son 2: Milo y Molly, con 2 y 3 años. Desde que llegaron a mi vida no he tenido ningun amor tan grande y no he encontrado a nada en el mundo que de tanta calma solo con ronronear. Puedes ver datos curiosos de los gatos <a href="https://www.tiendanimal.es/articulos/10-curiosidades-que-no-sabias-sobre-gatos-parte-2/" target="_blank">aqui</a>.</p>
-                <p>Mis gatos son muy únicos. Son introvertidos como yo y me entienden al 100% Si llegas a tener gatos, seguro nunca encontrarás nada mejor que ellos. </p>
+                <p>Mis gatos son los gatos más increíbles en la galaxia. Son 2: Milo y Molly, con 2 y 3 años. Desde que llegaron a mi vida, no he encontrado nada en el mundo que brinde tanta calma solo con ronronear. Puedes ver datos curiosos sobre los gatos <a href="https://www.tiendanimal.es/articulos/10-curiosidades-que-no-sabias-sobre-gatos-parte-2/" target="_blank">aquí</a>.</p>
+                <p>Mis gatos son muy únicos. Son introvertidos como yo y me entienden al 100%. Si llegas a tener gatos, seguro nunca encontrarás nada mejor que ellos.</p>
             </div>
         </section>
 
+        <!-- Lista de cualidades -->
         <section class="row mb-4">
-            <div class="col-md-4">
+            <div class="col-md-6 mb-4">
                 <h2>Cualidades asombrosas de los gatos</h2>
                 <ul>
                     <li>Son introvertidos pero amorosos</li>
-                    <li>Son agiles</li>
+                    <li>Son ágiles</li>
                     <li>Son limpios</li>
-                    <li>Demuestran el amor de una manera única e impregnable para cualquier humano</li>
+                    <li>Demuestran amor de una manera única y profunda</li>
+                    <li>Ronronean</li>
+                    <li>Se acuestan en todo lugar para acompañarte</li>
                 </ul>
             </div>
-        </section>
-
-        <!-- Paso 6: Zona que contiene un formulario -->
-        <section class="row mb-5">
             <div class="col-md-6">
-                <h2>Suscríbete para conocer mas de los gatos</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Suscribirse</button>
-                </form>
-            </div>
+              <h2>Suscríbete para conocer más sobre los gatos</h2>
+              <form>
+                  <div class="form-group">
+                      <label for="email">Correo electrónico:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Suscribirse</button>
+              </form>
+          </div>
         </section>
     </div>
 

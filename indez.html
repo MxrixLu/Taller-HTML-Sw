@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta Web con Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Gatos</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Los mejores gatos del mundo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mi experiencia con gatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Otros gatos que he conocido en el mundo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacta a mis gatos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <section class="row mb-4">
+            <div class="col-md-12 text-center">
+                <img src="https://cdn.discordapp.com/attachments/754111872399048707/1297556260832673792/5f0dd722-bbdf-4dc3-a4c1-1d6ea31cb81e.png?ex=67165af0&is=67150970&hm=7a7c3da23b2d1893d66fdd70820daf397cab1217d7167ee85ee49cfc56cf7eb7&" class="img-fluid" alt="Imagen destacada">
+            </div>
+        </section>
+
+        <section class="row mb-4">
+            <div class="col-md-8">
+                <h2>Sobre mis gatos</h2>
+                <p>Mis gatos son los gatos más increibles en la galaxía. Son 2: Milo y Molly, con 2 y 3 años. Desde que llegaron a mi vida no he tenido ningun amor tan grande y no he encontrado a nada en el mundo que de tanta calma solo con ronronear. Puedes ver datos curiosos de los gatos <a href="https://www.tiendanimal.es/articulos/10-curiosidades-que-no-sabias-sobre-gatos-parte-2/" target="_blank">aqui</a>.</p>
+                <p>Mis gatos son muy únicos. Son introvertidos como yo y me entienden al 100% Si llegas a tener gatos, seguro nunca encontrarás nada mejor que ellos. </p>
+            </div>
+        </section>
+
+        <section class="row mb-4">
+            <div class="col-md-4">
+                <h2>Cualidades asombrosas de los gatos</h2>
+                <ul>
+                    <li>Son introvertidos pero amorosos</li>
+                    <li>Son agiles</li>
+                    <li>Son limpios</li>
+                    <li>Demuestran el amor de una manera única e impregnable para cualquier humano</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Paso 6: Zona que contiene un formulario -->
+        <section class="row mb-5">
+            <div class="col-md-6">
+                <h2>Suscríbete para conocer mas de los gatos</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
